@@ -1,0 +1,37 @@
+-- create database - folder
+create database lumentechnology;
+-- select the db
+use lumentechnology;
+-- create table category
+create table category(
+categoryId int,
+categoryName varchar(150)
+);
+ 
+--view the data
+select * from category;
+--insert the data
+insert into category(categoryId,categoryName)
+values(101,'Collaboration '),(102,'Edge Cloud '),(103,'Managed & Professional Services'),(104,'Networking'),(105,'Security')
+-- update of data
+update category
+set categoryName='Managed & Expert Services'
+where categoryId=103;
+-- delete of data
+delete from category 
+where categoryId=105;
+ 
+create table product(
+productId int,
+productName varchar(50),
+productDesc varchar(500),
+categoryId int
+)
+ 
+create table dummy(
+dummyid int,
+name varchar(25)
+)
+-- delete the table
+drop table dummy;
+ 
