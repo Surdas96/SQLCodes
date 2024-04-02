@@ -34,4 +34,6 @@ name varchar(25)
 )
 -- delete the table
 drop table dummy;
+
+## adding modification for git/github
  
